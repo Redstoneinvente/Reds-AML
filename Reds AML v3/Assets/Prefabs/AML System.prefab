@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1998827631642523201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2782845299237976246}
+  m_Layer: 0
+  m_Name: AML System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2782845299237976246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998827631642523201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1830.0936, y: 577.06085, z: 8.809013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6728382515812135789}
+  - {fileID: 4811150947260004737}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4910112505450558516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6728382515812135789}
+  - component: {fileID: 172755946231312434}
+  m_Layer: 0
+  m_Name: Reds AML System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6728382515812135789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910112505450558516}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1830.0936, y: -577.06085, z: -8.809013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2782845299237976246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &172755946231312434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910112505450558516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9759d89daf8d455186b50eae17d822b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neuralNetwork:
+    inputsCount: 6
+    inputDatas:
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    - inputData: 0
+      expectedOutput: 0
+      processedData: 0
+    layers:
+    - amountInputs: 6
+      nodes:
+      - inputData:
+        - 5116714
+        - 5116714
+        - 5116714
+        - 5116714
+        - 5116714
+        - 0
+        weights:
+        - -0.00005358114867703989
+        - -0.00009302312537329271
+        - -0.00009849196067079902
+        - -0.00007599280797876418
+        - -0.00008514092769473791
+        - -0.00009873627277556807
+      - inputData:
+        - 5116714
+        - 5116714
+        - 5116714
+        - 5116714
+        - 5116714
+        - 0
+        weights:
+        - -0.00009998925816034898
+        - -0.000011161084330524318
+        - -0.00009717663488117978
+        - -0.00008539760892745107
+        - -0.0000612529183854349
+        - -0.00008200049342121929
+      biasses:
+      - -0.00009866397158475593
+      - -0.31322944164276123
+      - 0
+      - 0
+      - 0
+      - 0
+    - amountInputs: 2
+      nodes:
+      - inputData:
+        - 0
+        - 0
+        weights:
+        - -0.00004269183045835234
+        - -0.00009326193685410544
+      - inputData:
+        - 0
+        - 0
+        weights:
+        - -0.000057395729527343065
+        - -0.00009284434781875461
+      biasses:
+      - -0.000029096347134327516
+      - -0.7314746379852295
+    - amountInputs: 2
+      nodes:
+      - inputData:
+        - 0.4999927282333374
+        - 0.3248712122440338
+        weights:
+        - 0.03932834416627884
+        - -0.0000972655980149284
+      - inputData:
+        - 0.4999927282333374
+        - 0.3248712122440338
+        weights:
+        - -0.00009999802568927407
+        - -0.00009897387644741684
+      biasses:
+      - -0.5172600746154785
+      - -0.00009412715735379606
+  learnRate: 0.01
+  iterations: 10
+  costText: {fileID: 0}
+  transaction:
+    amnt: 120
+    sendingUser:
+      name: A
+      pastTransactions: []
+      averageSpendings: 120
+      averageEarnings: 120
+      hadIllegals: 0
+    receivingUser:
+      name: B
+      pastTransactions: []
+      averageSpendings: 120
+      averageEarnings: 120
+      hadIllegals: 0
+    sendingCurrency: $
+    receivingCurrency: $
+    transactionID: A
+    flagAsIllegal: 0
+    timeStamp: 
+    transactionReason: 
+  csvPath: /Users/pranavgowardun/Desktop/dt.csv
+  canRun: 0
+  packetSize: 10
+  currLine: 0
+--- !u!1 &8856479368735221796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4811150947260004737}
+  - component: {fileID: 8838649591227264832}
+  m_Layer: 0
+  m_Name: AML Data Imp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4811150947260004737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856479368735221796}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2782845299237976246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8838649591227264832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856479368735221796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9049b15c74a4717903af114998e50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineToRead: 0
+  amlSystem: {fileID: 172755946231312434}
+  waitTime: 0
+  performanceDisplay: {fileID: 0}
+  csvFilePath: /Users/pranavgowardun/Desktop/dt.csv

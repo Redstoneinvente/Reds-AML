@@ -1,0 +1,4 @@
+repository "Reds AML v3@Redstoneinvente_AS_Publisher@cloud"
+  path "/"
+    br "/main"
+    co "/main"
